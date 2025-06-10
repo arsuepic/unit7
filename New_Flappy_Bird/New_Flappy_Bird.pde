@@ -5,14 +5,14 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-float x = 100;
-float y;
-float v = 0;
-float g = 0.5;
-float s = 0;
-
 Minim minim;
 AudioPlayer flap, hit, point, gameover;
+
+final float x = 100;
+float y;
+float v = 0;
+final float g = 0.5;
+int s = 0;
 
 int MODE;
 final int INTRO = 0;
@@ -37,7 +37,6 @@ int boostD = 180;
 
 int score = 0;
 
-// Colour declarations
 color black         = #000000;
 color white         = #FFFFFF;
 color sky           = #87CEEB;  // Sky blue
